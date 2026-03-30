@@ -1,12 +1,10 @@
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import { ParallaxBlock, TiltSpring, TypewriterText } from '@/components/effects';
 import { heroContent } from '@/data/portfolioData';
 import styles from './HeroSection.module.css';
 
 export default function HeroSection() {
-  const { basePath } = useRouter();
-  const heroImageSrc = `${basePath || ''}/images/mateo.png`;
+  const heroImageSrc = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/mateo.png`;
 
   return (
     <section id="home" className={styles.heroSection}>
