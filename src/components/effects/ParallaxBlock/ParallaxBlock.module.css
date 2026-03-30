@@ -1,0 +1,4 @@
+.root {
+  transform: translate3d(0, var(--parallax-offset, 0px), 0);
+  will-change: transform;
+}

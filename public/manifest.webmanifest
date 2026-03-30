@@ -1,0 +1,8 @@
+{
+  "name": "Mateo Gomez Ossa Portfolio",
+  "short_name": "MGO Portfolio",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0f1224",
+  "background_color": "#070b18"
+}

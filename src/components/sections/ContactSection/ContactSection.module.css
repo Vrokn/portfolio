@@ -1,0 +1,64 @@
+.section {
+
+  background: rgba(4, 6, 15, 0.58);
+  padding: 1.35rem;
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.26);
+}
+
+.headingWrap {
+  margin-bottom: 0.9rem;
+}
+
+.kicker {
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: #aab8e8;
+}
+
+.title {
+  margin: 0.38rem 0 0;
+  font-family: 'Michroma', sans-serif;
+  color: #e7edff;
+  text-shadow: 2px 2px 5px #000000;
+  font-size: clamp(1.1rem, 2.5vw, 1.7rem);
+}
+
+.titleTyped {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contactText {
+  margin: 0;
+  color: #d5def7;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.contactLinkWrap {
+  margin-top: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.52rem;
+}
+
+.contactLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(176, 192, 255, 0.35);
+  background: rgba(13, 17, 39, 0.82);
+  color: #dde7ff;
+  font-family: 'Michroma', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 1rem;
+  }
+}

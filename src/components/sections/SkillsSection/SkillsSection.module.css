@@ -1,0 +1,78 @@
+.section {
+
+  background: rgba(4, 6, 15, 0.58);
+  padding: 1.35rem;
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.26);
+}
+
+.headingWrap {
+  margin-bottom: 0.9rem;
+}
+
+.kicker {
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: #aab8e8;
+}
+
+.title {
+  margin: 0.38rem 0 0;
+  font-family: 'Michroma', sans-serif;
+  color: #e7edff;
+  text-shadow: 2px 2px 5px #000000;
+  font-size: clamp(1.1rem, 2.5vw, 1.7rem);
+}
+
+.titleTyped {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.skillCategoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.85rem;
+}
+
+.skillCard {
+  border: 1px solid rgba(191, 203, 255, 0.2);
+  border-radius: 0.85rem;
+  background: rgba(10, 13, 31, 0.72);
+  padding: 0.95rem;
+  display: grid;
+  gap: 0.66rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.skillCardTitle {
+  margin: 0;
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.77rem;
+  letter-spacing: 0.06em;
+  color: #dce4ff;
+}
+
+.badgeWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.44rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(174, 192, 255, 0.3);
+  background: rgba(66, 91, 177, 0.24);
+  color: #e5ecff;
+  padding: 0.21rem 0.52rem;
+  font-size: 0.72rem;
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 1rem;
+  }
+}

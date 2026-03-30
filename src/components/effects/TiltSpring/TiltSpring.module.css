@@ -1,0 +1,4 @@
+.root {
+  transform-style: preserve-3d;
+  transition: box-shadow 170ms ease;
+}
