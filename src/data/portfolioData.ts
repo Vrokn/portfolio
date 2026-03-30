@@ -10,6 +10,7 @@ export const SITE_URL = 'https://vrokn.github.io/portfolio/';
 export const SITE_TITLE = 'Mateo Gomez Ossa | Senior Frontend Engineer';
 export const SITE_DESCRIPTION =
   'Senior Frontend Engineer with 8+ years building enterprise-grade React and TypeScript products across fintech, betting platforms and data-driven SaaS.';
+export const SOCIAL_IMAGE_URL = `${SITE_URL}images/mateo.png`;
 
 export const heroContent: HeroContent = {
   title: 'Mateo Gomez Ossa',
