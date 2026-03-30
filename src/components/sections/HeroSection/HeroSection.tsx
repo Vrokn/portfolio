@@ -1,9 +1,13 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { ParallaxBlock, TiltSpring, TypewriterText } from '@/components/effects';
 import { heroContent } from '@/data/portfolioData';
 import styles from './HeroSection.module.css';
 
 export default function HeroSection() {
+  const { basePath } = useRouter();
+  const heroImageSrc = `${basePath || ''}/images/mateo.png`;
+
   return (
     <section id="home" className={styles.heroSection}>
       <ParallaxBlock speed={-0.1}>
@@ -35,7 +39,7 @@ export default function HeroSection() {
             <TiltSpring className={styles.heroPortraitTilt}>
               <div className={styles.heroPortraitFrame}>
                 <Image
-                  src="/images/mateo.png"
+                  src={heroImageSrc}
                   alt="Portrait of Mateo Gomez Ossa"
                   width={1080}
                   height={1920}
