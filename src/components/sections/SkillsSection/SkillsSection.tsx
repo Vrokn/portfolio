@@ -7,14 +7,19 @@ export default function SkillsSection() {
     <section id="skills" className={styles.section} data-reveal="true">
       <ParallaxBlock speed={-0.05}>
         <div className={styles.headingWrap}>
-          <span className={styles.kicker}>Capabilities</span>
+          <span className={styles.kicker}>Stack</span>
           <h2 className={styles.title}>
-            <TypewriterText words={['Skills']} className={styles.titleTyped} showCursor={false} loop={false} />
+            <TypewriterText
+              words={['What I Build With']}
+              className={styles.titleTyped}
+              showCursor={false}
+              loop={false}
+            />
           </h2>
         </div>
         <div className={styles.skillCategoryGrid}>
           {skillCategories.map((category) => (
-            <TiltSpring key={category.title}>
+            <TiltSpring key={category.title} className={styles.skillCardMotion}>
               <article className={styles.skillCard}>
                 <h3 className={styles.skillCardTitle}>{category.title}</h3>
                 <div className={styles.badgeWrap}>

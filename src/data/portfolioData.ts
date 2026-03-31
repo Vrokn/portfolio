@@ -18,8 +18,8 @@ export const heroContent: HeroContent = {
     'Senior Frontend Engineer with 8+ years building enterprise-grade UI systems in fintech, betting and data-driven SaaS.',
   badge: 'React + TypeScript + Scalable UI Architecture',
   primaryAction: {
-    label: 'See Experience',
-    href: '#work',
+    label: 'View my work',
+    href: '#projects',
   },
   secondaryAction: {
     label: 'Contact Me',
@@ -111,7 +111,8 @@ export const projects: ProjectEntry[] = [
       'Responsive e-commerce concept built with Bootstrap. Focused on clean UI structure and reusable layout components.',
     stack: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
     href: 'https://vrokn.github.io/bootstrap-e-commerce/',
-    mediaNote: 'Video and updated screenshots will be uploaded soon.',
+    videoSrc: '/videos/knot.mp4',
+    mediaNote: 'Product-focused demo of the responsive storefront flow.',
   },
   {
     name: 'Posts Voting Blog',
@@ -120,7 +121,8 @@ export const projects: ProjectEntry[] = [
       'Reddit-inspired voting feed where posts can be ranked in real time. Built to practice reusable React state patterns.',
     stack: ['React', 'Semantic UI', 'JavaScript'],
     href: 'https://vrokn.github.io/postsvoting/',
-    mediaNote: 'Video and updated screenshots will be uploaded soon.',
+    videoSrc: '/videos/voting.mp4',
+    mediaNote: 'Demo highlighting live ranking interactions and state updates.',
   },
   {
     name: 'Bulls and Cows',
@@ -129,7 +131,8 @@ export const projects: ProjectEntry[] = [
       'Classic number guessing game with random generation and event-driven logic.',
     stack: ['JavaScript', 'jQuery', 'HTML', 'CSS'],
     href: 'https://vrokn.github.io/picasyfijas/',
-    mediaNote: 'Video and updated screenshots will be uploaded soon.',
+    videoSrc: '/videos/picas.mp4',
+    mediaNote: 'Gameplay walkthrough focused on event-driven guessing logic.',
   },
   {
     name: 'Jaguar Landing',
@@ -137,7 +140,8 @@ export const projects: ProjectEntry[] = [
     summary: 'Landing page concept focused on transitions, styling and clean visual hierarchy.',
     stack: ['HTML', 'CSS'],
     href: 'https://vrokn.github.io/landingforjaguar/',
-    mediaNote: 'Video and updated screenshots will be uploaded soon.',
+    videoSrc: '/videos/jaguar.mp4',
+    mediaNote: 'Visual pass through layout, styling and transition details.',
   },
   {
     name: 'Stopwatches',
@@ -146,7 +150,8 @@ export const projects: ProjectEntry[] = [
       'Utility app to create multiple stopwatches for task tracking. Built with reusable components and state handling.',
     stack: ['React', 'JavaScript'],
     href: 'https://vrokn.github.io/Timers/',
-    mediaNote: 'Video and updated screenshots will be uploaded soon.',
+    videoSrc: '/videos/timers.mp4',
+    mediaNote: 'Feature preview for multiple timers and task-oriented tracking.',
   },
 ];
 
@@ -162,6 +167,7 @@ export const experience: ExperienceEntry[] = [
       'Implemented an AI-assisted PR review bot that reduced integration cycle time by around 50% and improved merge readiness.',
     ],
     stack: ['React', 'TypeScript', 'Design Systems', 'Monorepo', 'CI/CD'],
+    previewImageSrc: '/career/fuse.png',
   },
   {
     company: 'BAPPY',
@@ -174,6 +180,7 @@ export const experience: ExperienceEntry[] = [
       'Integrated fiat and crypto payment flows, and maintained CI/CD pipelines in AWS to streamline secure releases.',
     ],
     stack: ['Next.js', 'React', 'TypeScript', 'Tailwind', 'Node.js', 'AWS Amplify', 'CI/CD'],
+    previewImageSrc: '/career/bappy.png',
   },
   {
     company: 'Experienceflow.ai',
@@ -186,6 +193,7 @@ export const experience: ExperienceEntry[] = [
       'Upgraded React from v16 to v18 and refactored legacy class components into hooks-based architecture.',
     ],
     stack: ['React', 'TypeScript', 'Vite', 'Redux', 'Material UI', 'RTL', 'Jest'],
+    previewImageSrc: '/career/experienceflow.png',
   },
   {
     company: 'Hourly',
@@ -198,6 +206,7 @@ export const experience: ExperienceEntry[] = [
       'Implemented unit and integration tests with React Testing Library and TypeScript for reliable coverage.',
     ],
     stack: ['React', 'Redux', 'TypeScript', 'Jest', 'RTL'],
+    previewImageSrc: '/career/hourly.png',
   },
   {
     company: 'Struxtion',
@@ -210,6 +219,7 @@ export const experience: ExperienceEntry[] = [
       'Implemented testing protocols with Jest to improve reliability in core financial features.',
     ],
     stack: ['React', 'Material UI', 'Redux', 'Jest', 'Keycloak', 'Docker'],
+    previewImageSrc: '/career/struxtion.png',
   },
   {
     company: 'Museo de Bogota',
@@ -222,6 +232,8 @@ export const experience: ExperienceEntry[] = [
       'Built newsletter web templates and delivered museum digital experiences.',
     ],
     stack: ['React', 'MongoDB', 'Express', 'Bootstrap', 'SASS'],
+    href: 'https://vrokn.github.io/bogotarot/#/',
+    previewImageSrc: '/career/museo-bogota.png',
   },
 ];
 

@@ -26,6 +26,10 @@
 }
 
 .mainContent {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
   padding-top: 1.35rem;
   display: grid;
   gap: 2.15rem;
@@ -44,6 +48,9 @@
   }
 
   .mainContent > section {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
     min-height: calc(100svh - var(--header-height));
     display: flex;
     align-items: center;

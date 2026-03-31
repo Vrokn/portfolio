@@ -1,8 +1,10 @@
 .section {
-
   background: rgba(4, 6, 15, 0.58);
   padding: 1.35rem;
   box-shadow: 0 14px 38px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .headingWrap {
@@ -31,9 +33,13 @@
 }
 
 .skillCategoryGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 0.85rem;
+  columns: 3;
+  column-gap: 0.85rem;
+}
+
+.skillCardMotion {
+  break-inside: avoid;
+  margin-bottom: 0.85rem;
 }
 
 .skillCard {
@@ -67,12 +73,32 @@
   border: 1px solid rgba(174, 192, 255, 0.3);
   background: rgba(66, 91, 177, 0.24);
   color: #e5ecff;
-  padding: 0.21rem 0.52rem;
+  padding: 0.24rem 0.56rem;
   font-size: 0.72rem;
+  height: 2rem;
+}
+
+.badge::before {
+  content: '';
+  width: 0.34rem;
+  height: 0.34rem;
+  border-radius: 999px;
+  margin-right: 0.38rem;
+  background: linear-gradient(130deg, rgba(148, 175, 255, 0.96), rgba(221, 168, 255, 0.9));
+}
+
+@media (max-width: 1080px) {
+  .skillCategoryGrid {
+    columns: 2;
+  }
 }
 
 @media (max-width: 700px) {
   .section {
     padding: 1rem;
+  }
+
+  .skillCategoryGrid {
+    columns: 1;
   }
 }

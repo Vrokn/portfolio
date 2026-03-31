@@ -1,0 +1,203 @@
+.section {
+  background: rgba(4, 6, 15, 0.58);
+  padding: 1.35rem;
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.headingWrap {
+  margin-bottom: 0.9rem;
+}
+
+.kicker {
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: #aab8e8;
+}
+
+.title {
+  margin: 0.38rem 0 0;
+  font-family: 'Michroma', sans-serif;
+  color: #e7edff;
+  text-shadow: 2px 2px 5px #000000;
+  font-size: clamp(1.1rem, 2.5vw, 1.7rem);
+}
+
+.titleTyped {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.horizontalRail {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  gap: 0.9rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(120, 141, 220, 0.75) rgba(12, 16, 36, 0.9);
+  padding-bottom: 0.6rem;
+}
+
+.horizontalRail::-webkit-scrollbar {
+  height: 9px;
+}
+
+.horizontalRail::-webkit-scrollbar-track {
+  background: rgba(12, 16, 36, 0.9);
+  border-radius: 999px;
+}
+
+.horizontalRail::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: linear-gradient(115deg, rgba(106, 129, 217, 0.9), rgba(139, 165, 255, 0.86));
+  border: 1px solid rgba(18, 24, 53, 0.75);
+}
+
+.horizontalRail::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(115deg, rgba(126, 149, 238, 0.95), rgba(156, 182, 255, 0.92));
+}
+
+.railItem {
+  scroll-snap-align: start;
+  flex: 1 1 24rem;
+  min-width: min(32vw, 440px);
+  display: flex;
+}
+
+.workCard {
+  border: 1px solid rgba(191, 203, 255, 0.2);
+  border-radius: 0.85rem;
+  background: rgba(10, 13, 31, 0.72);
+  padding: 0.95rem;
+  display: grid;
+  gap: 0.66rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  min-height: 100%;
+  width: 100%;
+}
+
+.previewFrame {
+  position: relative;
+  border-radius: 0.66rem;
+  border: 1px solid rgba(177, 193, 255, 0.24);
+  background:
+    linear-gradient(145deg, rgba(59, 74, 136, 0.45), rgba(114, 80, 155, 0.34)),
+    rgba(8, 12, 27, 0.82);
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+
+.previewImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badgeWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.44rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(174, 192, 255, 0.3);
+  background: rgba(66, 91, 177, 0.24);
+  color: #e5ecff;
+  padding: 0.21rem 0.52rem;
+  font-size: 0.72rem;
+  line-height: 1;
+  white-space: nowrap;
+  height: 2rem;
+}
+
+.cardPeriod {
+  margin: 0;
+  font-size: 0.69rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c3d0f9;
+}
+
+.cardTitle {
+  margin: 0;
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.89rem;
+  color: #ecf2ff;
+}
+
+.cardSubtitle {
+  margin: 0;
+  color: #d4dffc;
+  font-size: 0.84rem;
+  text-align: left;
+}
+
+.cardText {
+  margin: 0;
+  color: #d6dff6;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.highlightList {
+  margin: 0;
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.inlineLink {
+  width: fit-content;
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.66rem;
+  color: #d6e4ff;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+@media (min-width: 1450px) {
+  .railItem {
+    min-width: min(32vw, 440px);
+  }
+}
+
+@media (max-width: 920px) {
+  .horizontalRail {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    overflow-x: visible;
+    scroll-snap-type: none;
+    padding-bottom: 0;
+  }
+
+  .railItem {
+    flex: initial;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 1rem;
+  }
+}

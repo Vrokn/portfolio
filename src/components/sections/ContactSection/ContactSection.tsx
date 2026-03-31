@@ -7,7 +7,7 @@ export default function ContactSection() {
     <section id="contact" className={styles.section} data-reveal="true">
       <ParallaxBlock speed={-0.04}>
         <div className={styles.headingWrap}>
-          <span className={styles.kicker}>Contact</span>
+          <span className={styles.kicker}>Next Step</span>
           <h2 className={styles.title}>
             <TypewriterText
               words={["Let's Work Together"]}

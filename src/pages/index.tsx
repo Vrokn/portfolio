@@ -3,11 +3,12 @@ import { useEffect } from 'react';
 import {
   AboutSection,
   ContactSection,
+  ExperienceSection,
   HeroSection,
   ParticleBackground,
+  ProjectsSection,
   SiteHeader,
   SkillsSection,
-  WorkSection,
 } from '@/components';
 import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL, SOCIAL_IMAGE_URL, personSchema } from '@/data/portfolioData';
 import styles from './index.module.css';
@@ -84,8 +85,8 @@ export default function HomePage() {
         <meta property="og:image" content={SOCIAL_IMAGE_URL} />
         <meta property="og:image:secure_url" content={SOCIAL_IMAGE_URL} />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1080" />
-        <meta property="og:image:height" content="1920" />
+        <meta property="og:image:width" content="1976" />
+        <meta property="og:image:height" content="889" />
         <meta property="og:image:alt" content="Portrait of Mateo Gomez Ossa" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -112,7 +113,8 @@ export default function HomePage() {
           <HeroSection />
           <AboutSection />
           <SkillsSection />
-          <WorkSection />
+          <ExperienceSection />
+          <ProjectsSection />
           <ContactSection />
         </main>
       </div>

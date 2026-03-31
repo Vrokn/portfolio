@@ -16,7 +16,7 @@
   max-width: none;
   margin: 0;
   min-height: var(--header-height);
-  padding: 0.55rem 1rem 0.6rem;
+  padding: 0.55rem clamp(1.2rem, 3.5vw, 2.8rem) 0.6rem;
 }
 
 .logo {

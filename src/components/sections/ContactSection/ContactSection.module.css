@@ -1,8 +1,10 @@
 .section {
-
   background: rgba(4, 6, 15, 0.58);
   padding: 1.35rem;
   box-shadow: 0 14px 38px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .headingWrap {
@@ -33,28 +35,32 @@
 .contactText {
   margin: 0;
   color: #d5def7;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
 }
 
 .contactLinkWrap {
   margin-top: 0.95rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.52rem;
+  gap: 0.68rem;
 }
 
 .contactLink {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 999px;
-  border: 1px solid rgba(176, 192, 255, 0.35);
-  background: rgba(13, 17, 39, 0.82);
-  color: #dde7ff;
+  border-radius: 0.55rem;
+  border: 1px solid rgba(206, 216, 255, 0.35);
+  background: rgba(10, 11, 27, 0.58);
+  color: #dce5ff;
   font-family: 'Michroma', sans-serif;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  padding: 0.58rem 0.98rem;
+  transition: transform 160ms ease;
+}
+
+.contactLink:hover {
+  transform: translateY(-1px);
 }
 
 @media (max-width: 700px) {

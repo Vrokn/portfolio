@@ -3,6 +3,9 @@
   background: rgba(4, 6, 15, 0.58);
   padding: 1.35rem;
   box-shadow: 0 14px 38px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .headingWrap {
@@ -39,8 +42,7 @@
   margin: 0;
   color: #d1dbfb;
   font-size: 0.96rem;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
 }
 
 @media (max-width: 700px) {

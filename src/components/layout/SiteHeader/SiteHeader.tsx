@@ -4,7 +4,8 @@ import styles from './SiteHeader.module.css';
 const navigationItems = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
-  { label: 'Experience / Projects', href: '#work' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ];
 

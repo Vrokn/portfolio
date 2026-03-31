@@ -1,36 +1,48 @@
 .heroSection {
   padding-top: 0.5rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .heroGrid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 1.3fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 2rem;
   align-items: center;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .heroMain {
   text-shadow: 2px 2px 6px #000000;
   max-width: 620px;
+  min-width: 0;
 }
 
 .heroBadge {
   display: inline-block;
-  margin: 0 0 0.5rem;
   font-family: 'Michroma', sans-serif;
   font-size: 0.68rem;
   letter-spacing: 0.08em;
   color: #bbc7f8;
   border: 1px solid rgba(171, 189, 255, 0.35);
   border-radius: 999px;
-  padding: 0.42rem 0.72rem;
+  padding: 0.5rem 0.96rem;
   background: rgba(17, 11, 34, 0.6);
 }
 
 .heroSubtitle {
-  margin: 0.75rem 0 0;
+  margin: 0.75rem 0 ;
   color: #d6def6;
   font-size: clamp(0.96rem, 2.2vw, 1.18rem);
+  line-height: 1.55;
+}
+
+.heroSubtitleHighlight {
+  color: #f3f6ff;
+  font-weight: 700;
 }
 
 .heroDynamic {
@@ -62,7 +74,7 @@
   border-radius: 0.55rem;
   padding: 0.58rem 0.98rem;
   font-family: 'Michroma', sans-serif;
-  font-size: 0.71rem;
+  font-size: 0.85rem;
   transition: transform 160ms ease;
 }
 
@@ -84,12 +96,14 @@
 }
 
 .heroPortraitTilt {
-  width: clamp(380px, 44vw, 620px);
+  width: min(100%, 620px);
 }
 
 .heroPortraitParallax {
   justify-self: end;
   width: 100%;
+  min-width: 0;
+  max-width: 100%;
   display: flex;
   justify-content: flex-end;
 }
@@ -100,7 +114,7 @@
   max-width: 620px;
   margin-inline: auto;
   border-radius: 0;
-  overflow: visible;
+  overflow: hidden;
   border: 0;
   background: transparent;
   box-shadow: none;
@@ -108,10 +122,15 @@
 
 .heroPortraitFrame :global(img) {
   width: 100%;
-  height: auto;
+  height: 40vh;
   display: block;
+  object-fit: contain;
+  object-position: center;
   animation: portraitFloat 5.8s ease-in-out infinite;
   filter: drop-shadow(0 18px 32px rgba(0, 0, 0, 0.58));
+  transform-origin:  scale(2);
+  image-rendering: auto;
+  backface-visibility: hidden;
 }
 
 .heroPortraitGlow {
@@ -124,15 +143,15 @@
 
 @keyframes portraitFloat {
   0% {
-    transform: translate3d(0, 0, 0) scale(1.12);
+    transform: translate3d(0, 0, 0) scale(2);
   }
 
   50% {
-    transform: translate3d(0, -10px, 0) scale(1.12);
+    transform: translate3d(0, -10px, 0) scale(2);
   }
 
   100% {
-    transform: translate3d(0, 0, 0) scale(1.12);
+    transform: translate3d(0, 0, 0) scale(2);
   }
 }
 
@@ -170,7 +189,11 @@
 
   .heroPortraitFrame {
     max-width: 390px;
-    overflow: hidden;
+  }
+
+  .heroPortraitFrame :global(img) {
+    filter: none;
+    height: 20vh;
   }
 
   .heroPortraitGlow {
@@ -190,15 +213,15 @@
 
   @keyframes portraitFloat {
     0% {
-      transform: translate3d(0, 0, 0) scale(1.03);
+      transform: translate3d(0, 0, 0) scale(1.08);
     }
 
     50% {
-      transform: translate3d(0, -8px, 0) scale(1.03);
+      transform: translate3d(0, -8px, 0) scale(1.08);
     }
 
     100% {
-      transform: translate3d(0, 0, 0) scale(1.03);
+      transform: translate3d(0, 0, 0) scale(1.08);
     }
   }
 }

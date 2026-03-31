@@ -1,5 +1,3 @@
-export type WorkTab = 'projects' | 'experience';
-
 export interface HeroContent {
   title: string;
   subtitle: string;
@@ -25,6 +23,7 @@ export interface ProjectEntry {
   summary: string;
   stack: string[];
   href: string;
+  videoSrc: string;
   mediaNote: string;
 }
 
@@ -35,6 +34,8 @@ export interface ExperienceEntry {
   period: string;
   highlights: string[];
   stack: string[];
+  href?: string;
+  previewImageSrc?: string;
 }
 
 export interface ContactEntry {
