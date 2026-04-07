@@ -171,6 +171,7 @@
   color: #d6e4ff;
   text-decoration: underline;
   text-underline-offset: 0.2rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 1450px) {
