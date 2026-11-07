@@ -18,7 +18,7 @@ export default function ContactSection() {
           </h2>
         </div>
         <p className={styles.contactText}>
-          Open to senior frontend opportunities, technical leadership challenges and product collaborations.
+          For senior product engineering, architecture consulting, and product collaborations.
         </p>
         <div className={styles.contactLinkWrap}>
           {contactEntries.map((entry) => (

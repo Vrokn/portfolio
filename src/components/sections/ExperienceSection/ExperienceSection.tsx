@@ -67,7 +67,15 @@ export default function ExperienceSection() {
                     </span>
                   ))}
                 </div>
-                {job.href ? (
+                {job.links && job.links.length > 0 ? (
+                  <div className={styles.linkRow}>
+                    {job.links.map((link) => (
+                      <a key={link.href} href={link.href} target="_blank" rel="noreferrer" className={styles.inlineLink}>
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
+                ) : job.href ? (
                   <a href={job.href} target="_blank" rel="noreferrer" className={styles.inlineLink}>
                     Open project
                   </a>

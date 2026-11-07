@@ -7,19 +7,24 @@ import type {
 } from '@/types/portfolio';
 
 export const SITE_URL = 'https://vrokn.github.io/portfolio/';
-export const SITE_TITLE = 'Mateo Gomez Ossa | Senior Frontend Engineer';
+export const SITE_TITLE = 'Mateo Gomez Ossa | Senior Product Engineer';
 export const SITE_DESCRIPTION =
-  'Senior Frontend Engineer with 8+ years building enterprise-grade React and TypeScript products across fintech, betting platforms and data-driven SaaS.';
+  'Senior Product Engineer with 8+ years shipping enterprise React and TypeScript products, ML detection interfaces, and agentic systems.';
 export const SOCIAL_IMAGE_URL = `${SITE_URL}images/mateo.png`;
 
 export const heroContent: HeroContent = {
   title: 'Mateo Gomez Ossa',
   subtitle:
-    'Senior Frontend Engineer with 8+ years building enterprise-grade UI systems in fintech, betting and data-driven SaaS.',
-  badge: 'React + TypeScript + Scalable UI Architecture',
+    'Senior Product Engineer with 8+ years shipping enterprise React systems, ML interfaces, and agentic products.',
+  badge: 'React + TypeScript + Product architecture',
+  proofs: [
+    { value: '5 min to 5 s', label: 'Webpack to Vite at Hauler Hero' },
+    { value: 'Hero Vision', label: 'ML detection UI in production' },
+    { value: 'Zight', label: 'Agent that files customs entries' },
+  ],
   primaryAction: {
     label: 'View my work',
-    href: '#projects',
+    href: '#experience',
   },
   secondaryAction: {
     label: 'Contact Me',
@@ -28,11 +33,10 @@ export const heroContent: HeroContent = {
 };
 
 export const aboutParagraphs: string[] = [
-  'I am a Senior Frontend Engineer specializing in React and TypeScript, with 8+ years of experience building enterprise-grade products across fintech, betting platforms and data-driven SaaS.',
-  'I focus on scalable UI architecture, reusable component systems and high-performance interfaces that support complex workflows while preserving type safety, usability and maintainability.',
-  'I work with a product-oriented mindset: translating complex requirements into intuitive user experiences in close collaboration with product, design and backend teams.',
-  'I actively leverage AI-assisted workflows, including Cursor, automated code review systems, and AI-assisted refactoring and documentation to accelerate delivery and improve engineering productivity.',
-  'My Fine and Visual Arts background influences how I design interaction clarity and usability. Outside software, I am passionate about music production and DJing. Fluent in English and Spanish.',
+  'I am a Senior Product Engineer. I take a feature from the product proposal and the architecture through to production, mostly in large React and TypeScript systems.',
+  'At Hauler Hero I build the CRM for waste collection and fleet companies. I led the move from Webpack to Vite, from about 5 minutes a build to about 5 seconds, and I designed Hero Vision, the screen where an ML model flags container overloads so operators stop creating exceptions by hand.',
+  'I also consult on architecture and agentic systems. At BorderFlow I shaped the platform and Zight, an agent that reads customs documents from email and files the entry, with a licensed broker in the loop.',
+  'On my own products I have shipped Bappy, CVAccelerate, Votelos, and commercial sites that are live today. My fine arts background still shows up in how I structure dense operational screens. I produce music and DJ outside of work. I work in English and Spanish.',
 ];
 
 export const skillCategories: SkillCategory[] = [
@@ -41,61 +45,55 @@ export const skillCategories: SkillCategory[] = [
     badges: [
       'React.js',
       'TypeScript',
+      'Next.js',
+      'Redux Toolkit',
+      'RTK Query',
       'JavaScript',
-      'React Native',
-      'Redux',
-      'Zustand',
-      'Hooks',
+      'deck.gl',
+      'Material UI',
+      'Tailwind',
+      'Vite',
       'HTML5',
       'CSS3',
-      'SASS',
       'Styled Components',
-      'Tailwind',
-      'Material UI',
-      'Bootstrap',
+      'React Native',
+      'Zustand',
       'Jest',
       'RTL',
-      'Vite',
     ],
-  },
-  {
-    title: 'Backend and APIs',
-    badges: ['Node.js', 'Express', 'Python (basics)', 'REST integrations'],
   },
   {
     title: 'Architecture and Delivery',
     badges: [
+      'Product engineering',
+      'Feature ownership',
+      'SOLID',
+      'Technical proposals',
+      'Geospatial UI',
       'Design Systems',
-      'Shared Packages',
-      'Git Submodules',
+      'Performance Optimization',
       'Monorepo Workflows',
       'Micro-frontends',
-      'Performance Optimization',
-      'UX and Usability',
       'CI/CD',
       'AWS',
       'AWS Amplify',
     ],
   },
   {
-    title: 'Data and Tools',
-    badges: ['MongoDB', 'PostgreSQL', 'MySQL', 'Jira', 'Notion', 'Linear', 'Slack', 'Teams', 'GitHub'],
-  },
-  {
-    title: 'AI and Creative',
+    title: 'AI and Agentic',
     badges: [
+      'Agentic systems',
+      'LLM product UI',
       'Cursor',
       'Automated PR Review Bots',
       'AI Refactoring',
-      'AI Documentation',
       'Claude',
-      'Arduino',
-      'Processing',
-      'P5.js',
       'Figma',
-      'Photoshop',
-      'Illustrator',
     ],
+  },
+  {
+    title: 'Backend and Data',
+    badges: ['Node.js', 'Express', 'REST integrations', 'PostgreSQL', 'MongoDB', 'MySQL'],
   },
   {
     title: 'Languages',
@@ -105,57 +103,89 @@ export const skillCategories: SkillCategory[] = [
 
 export const projects: ProjectEntry[] = [
   {
-    name: 'Knot E-commerce',
-    period: 'Personal Project',
+    name: 'Bappy',
+    period: 'Predictions market',
     summary:
-      'Responsive e-commerce concept built with Bootstrap. Focused on clean UI structure and reusable layout components.',
-    stack: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
-    href: 'https://vrokn.github.io/bootstrap-e-commerce/',
-    videoSrc: '/videos/knot.mp4',
-    mediaNote: 'Product-focused demo of the responsive storefront flow.',
+      'Prediction market for Latin America. People take a position on sports, politics, economy, and culture, or challenge their circle. I led the rebuild to Next.js, TypeScript, and Node, including fiat and crypto payments.',
+    stack: ['Next.js', 'TypeScript', 'Tailwind', 'Node.js', 'AWS'],
+    href: 'https://app.bappy.co',
+    imageSrc: '/projects/bappy.jpg',
+    mediaNote: 'Live app. Open a call or challenge a friend.',
   },
   {
-    name: 'Posts Voting Blog',
-    period: 'Personal Project',
+    name: 'CVAccelerate',
+    period: 'AI product',
     summary:
-      'Reddit-inspired voting feed where posts can be ranked in real time. Built to practice reusable React state patterns.',
-    stack: ['React', 'Semantic UI', 'JavaScript'],
-    href: 'https://vrokn.github.io/postsvoting/',
-    videoSrc: '/videos/voting.mp4',
-    mediaNote: 'Demo highlighting live ranking interactions and state updates.',
+      'Paste a CV and a job description. You get a match score, a tailored summary, a note for the recruiter, and an ATS-safe PDF. The model only rewrites what is already in the CV. It does not invent employers, dates, or certifications.',
+    stack: ['Next.js', 'TypeScript', 'AI'],
+    href: 'https://www.cvaccelerate.app/',
+    imageSrc: '/projects/cvaccelerate.jpg',
+    mediaNote: 'Free classic template. Pro layouts for senior and academic roles.',
   },
   {
-    name: 'Bulls and Cows',
-    period: 'Personal Project',
+    name: 'Votelos',
+    period: 'Civic tool',
     summary:
-      'Classic number guessing game with random generation and event-driven logic.',
-    stack: ['JavaScript', 'jQuery', 'HTML', 'CSS'],
-    href: 'https://vrokn.github.io/picasyfijas/',
-    videoSrc: '/videos/picas.mp4',
-    mediaNote: 'Gameplay walkthrough focused on event-driven guessing logic.',
+      'Tool for Colombia\'s 2026 presidential runoff. Voters compare the two finalists blind, then see who said what, with the quote and the page from the official program. Choices stay in the browser. Nothing is stored on a server.',
+    stack: ['Next.js', 'TypeScript'],
+    href: 'https://votelos.co/',
+    imageSrc: '/projects/votelos.jpg',
+    mediaNote: 'Twenty contrasting issues. No account. No campaign money.',
   },
   {
-    name: 'Jaguar Landing',
-    period: 'Personal Project',
-    summary: 'Landing page concept focused on transitions, styling and clean visual hierarchy.',
-    stack: ['HTML', 'CSS'],
-    href: 'https://vrokn.github.io/landingforjaguar/',
-    videoSrc: '/videos/jaguar.mp4',
-    mediaNote: 'Visual pass through layout, styling and transition details.',
+    name: 'Ossa Dispro',
+    period: 'Commercial site',
+    summary:
+      'Site for a Bogotá studio that designs, fabricates, and installs custom curtains and blinds. Catalog, process, project photos, and a quote request for homes and offices.',
+    stack: ['Next.js', 'TypeScript', 'SEO'],
+    href: 'https://www.ossadispro.com/',
+    imageSrc: '/projects/ossadispro.jpg',
+    mediaNote: 'Residential and corporate installs across Bogotá.',
   },
   {
-    name: 'Stopwatches',
-    period: 'Personal Project',
+    name: 'CivilArq',
+    period: 'Commercial site',
     summary:
-      'Utility app to create multiple stopwatches for task tracking. Built with reusable components and state handling.',
-    stack: ['React', 'JavaScript'],
-    href: 'https://vrokn.github.io/Timers/',
-    videoSrc: '/videos/timers.mp4',
-    mediaNote: 'Feature preview for multiple timers and task-oriented tracking.',
+      'Site for a Bogotá architecture and civil engineering practice. Soil studies, structural design, CAD, building permits, and turnkey construction, with the process and the work on the page.',
+    stack: ['Next.js', 'TypeScript', 'SEO'],
+    href: 'https://civilarq.vercel.app/',
+    imageSrc: '/projects/civilarq.jpg',
+    mediaNote: 'Three decades of built work, from houses to hotels.',
   },
 ];
 
 export const experience: ExperienceEntry[] = [
+  {
+    company: 'Hauler Hero',
+    role: 'Senior Product Engineer, Frontend',
+    location: 'Remote, San Diego, California',
+    period: 'May 2026 - Present',
+    highlights: [
+      'Own features end to end on the core CRM for waste collection and fleet companies, from the product proposal through production, on a large React and Redux app (RTK Query, MUI) moving to TypeScript.',
+      'Led the migration from Webpack to Vite. Build time dropped from about 5 minutes to about 5 seconds, and hot reload got fast for the whole engineering team.',
+      'Designed and built the Hero Vision review UI. An ML model flags container overloads. The screen shows the detection, the driver photo, the map, and a confirm action, replacing the old loop of uploading tablet photos and typing exceptions by hand.',
+      'Shipped routing, work orders, billing, and deck.gl maps for fleet operations, and set the frontend direction: SOLID boundaries, strict layering (utils, components, state, forms), and the TypeScript migration.',
+    ],
+    stack: ['React', 'Redux Toolkit', 'RTK Query', 'TypeScript', 'MUI', 'deck.gl', 'Vite'],
+    previewImageSrc: '/career/hauler-hero.jpg',
+  },
+  {
+    company: 'BorderFlow',
+    role: 'Architecture and Agentic Engineer',
+    location: 'Remote, US-Mexico',
+    period: 'Freelance consulting',
+    highlights: [
+      'Consulted on the architecture of BorderFlow, a licensed customs broker on both sides of the US-Mexico border. Entries, pedimentos, border transfers, and long haul sit on one shipment record.',
+      'Designed the agentic workflow for Zight. A shipper CCs the agent with the invoice, packing list, and BOL. Zight reads the documents, classifies the entry, and files it with CBP, with a licensed broker reviewing it.',
+      'Shaped BorderFlow Transfers: a shipper posts a lane, a verified carrier accepts, and Carta Porte plus the e-Manifest are produced from the same record before the truck reaches the bridge.',
+    ],
+    stack: ['Next.js', 'TypeScript', 'System design', 'AI agents', 'Product architecture'],
+    links: [
+      { label: 'borderflow.co', href: 'https://borderflow.co/' },
+      { label: 'bftransfer.co', href: 'https://bftransfer.co/' },
+    ],
+    previewImageSrc: '/career/borderflow.jpg',
+  },
   {
     company: 'FUSE',
     role: 'Senior Frontend Engineer',
@@ -180,6 +210,7 @@ export const experience: ExperienceEntry[] = [
       'Integrated fiat and crypto payment flows, and maintained CI/CD pipelines in AWS to streamline secure releases.',
     ],
     stack: ['Next.js', 'React', 'TypeScript', 'Tailwind', 'Node.js', 'AWS Amplify', 'CI/CD'],
+    href: 'https://app.bappy.co',
     previewImageSrc: '/career/bappy.png',
   },
   {
@@ -256,7 +287,7 @@ export const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Mateo Gomez Ossa',
-  jobTitle: 'Senior Frontend Engineer',
+  jobTitle: 'Senior Product Engineer',
   url: SITE_URL,
   description: SITE_DESCRIPTION,
   sameAs: contactEntries.map((entry) => entry.href),

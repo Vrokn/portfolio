@@ -18,7 +18,7 @@ export default function HeroSection() {
           <div className={styles.heroMain}>
             <p className={styles.heroDynamic}>
               <TypewriterText
-                words={['Hello! I am Mateo', 'Senior Frontend Engineer', 'Artist', 'Music Producer']}
+                words={['Hello! I am Mateo', 'Senior Product Engineer', 'Agentic Systems', 'Artist']}
                 className={styles.heroTyped}
                 typeSpeed={58}
                 backSpeed={31}
@@ -46,6 +46,14 @@ export default function HeroSection() {
                 {heroContent.secondaryAction.label}
               </a>
             </div>
+            <ul className={styles.heroProofs}>
+              {heroContent.proofs.map((proof) => (
+                <li key={proof.value} className={styles.heroProof}>
+                  <span className={styles.heroProofValue}>{proof.value}</span>
+                  <span className={styles.heroProofLabel}>{proof.label}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
           <ParallaxBlock speed={-0.18} className={styles.heroPortraitParallax}>

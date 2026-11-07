@@ -94,6 +94,38 @@
   transform: translateY(-1px);
 }
 
+.heroProofs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.55rem;
+  margin: 1.15rem 0 0;
+  padding: 0;
+  max-width: 560px;
+  list-style: none;
+}
+
+.heroProof {
+  border: 1px solid rgba(171, 189, 255, 0.28);
+  background: rgba(17, 11, 34, 0.45);
+  padding: 0.55rem 0.62rem;
+}
+
+.heroProofValue {
+  display: block;
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+  color: #f4f7ff;
+}
+
+.heroProofLabel {
+  display: block;
+  margin-top: 0.28rem;
+  color: #c5d0f0;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
 .heroPortraitTilt {
   width: min(100%, 620px);
 }
@@ -210,6 +242,11 @@
 
   .heroBadge {
     font-size: 0.8rem;
+  }
+
+  .heroProofs {
+    grid-template-columns: 1fr;
+    max-width: none;
   }
 
   @keyframes portraitFloat {

@@ -2,10 +2,10 @@ import { useState } from 'react';
 import styles from './SiteHeader.module.css';
 
 const navigationItems = [
-  { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
   { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
+  { label: 'About', href: '#about' },
+  { label: 'Skills', href: '#skills' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -17,7 +17,7 @@ export default function SiteHeader() {
       <div className={styles.inner}>
         <a href="#home" className={styles.logo}>
           <span className={styles.brandName}>Mateo Gomez Ossa</span>
-          <span className={styles.brandRole}>Senior Frontend Developer</span>
+          <span className={styles.brandRole}>Senior Product Engineer</span>
         </a>
         <button
           type="button"

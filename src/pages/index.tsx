@@ -111,10 +111,10 @@ export default function HomePage() {
       <div className={styles.pageRoot}>
         <main className={styles.mainContent}>
           <HeroSection />
-          <AboutSection />
-          <SkillsSection />
           <ExperienceSection />
           <ProjectsSection />
+          <AboutSection />
+          <SkillsSection />
           <ContactSection />
         </main>
       </div>

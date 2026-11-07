@@ -1,7 +1,13 @@
+export interface HeroProof {
+  value: string;
+  label: string;
+}
+
 export interface HeroContent {
   title: string;
   subtitle: string;
   badge: string;
+  proofs: HeroProof[];
   primaryAction: {
     label: string;
     href: string;
@@ -10,6 +16,11 @@ export interface HeroContent {
     label: string;
     href: string;
   };
+}
+
+export interface ExternalLink {
+  label: string;
+  href: string;
 }
 
 export interface SkillCategory {
@@ -23,7 +34,9 @@ export interface ProjectEntry {
   summary: string;
   stack: string[];
   href: string;
-  videoSrc: string;
+  links?: ExternalLink[];
+  videoSrc?: string;
+  imageSrc?: string;
   mediaNote: string;
 }
 
@@ -35,6 +48,7 @@ export interface ExperienceEntry {
   highlights: string[];
   stack: string[];
   href?: string;
+  links?: ExternalLink[];
   previewImageSrc?: string;
 }
 
