@@ -171,9 +171,9 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: 'BorderFlow',
-    role: 'Architecture and Agentic Engineer',
+    role: 'Architecture and Agentic Engineer, Freelance',
     location: 'Remote, US-Mexico',
-    period: 'Freelance consulting',
+    period: 'Feb 2026 - Oct 2026',
     highlights: [
       'Consulted on the architecture of BorderFlow, a licensed customs broker on both sides of the US-Mexico border. Entries, pedimentos, border transfers, and long haul sit on one shipment record.',
       'Designed the agentic workflow for Zight. A shipper CCs the agent with the invoice, packing list, and BOL. Zight reads the documents, classifies the entry, and files it with CBP, with a licensed broker reviewing it.',
